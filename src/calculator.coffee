@@ -19,6 +19,7 @@ mathjs = require("mathjs")()
 module.exports = (robot) ->
   robot.respond /(calc|calculate|calculator|convert|math|maths)( me)? (.*)/i, (msg) ->
     try
-      msg.send(mathjs.eval(mathjs.format(msg.match[3], {precision: 14})))
+      result = mathjs.eval msg.match[3]
+      msg.send mathjs.format(result, {precision: 2})
     catch error
       msg.send error.message || 'Could not compute.'
