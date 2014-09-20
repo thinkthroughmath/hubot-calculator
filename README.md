@@ -1,3 +1,5 @@
+<strong>Now hosted at https://github.com/hubot-scripts/hubot-calculator</strong>
+
 hubot-calculator
 ================
 
@@ -11,7 +13,7 @@ Replacement for hubot's math.coffee script that uses http://mathjs.org/ instead 
     ...
     "dependencies": {
       ...
-      "hubot-calculator": ">= 0.2.0"
+      "hubot-calculator": ">= 0.3.0"
       ...
     },
     ...
